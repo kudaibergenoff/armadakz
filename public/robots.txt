@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+Allow: /catalog
+Allow: /sitemap
+
+Disallow: /prodavcy?filter
+Disallow: /prodavcy?category=
+Disallow: /prodavcy?page=
+Disallow: /catalog/*?page=
+Disallow: /catalog/*?sort=
+Disallow: /catalog/*?minprice=
+Disallow: /news?page=
+Disallow: /utm
+
+
+Sitemap: https://armada.kz/sitemap.xml

@@ -1,0 +1,37 @@
+.slideshow {
+  &__arrow {
+    &--prev {
+
+    }
+
+    &--next {
+
+    }
+  }
+
+  &__items {
+    list-style: none;
+    padding: 0;
+
+    .slick-track {
+      padding-bottom: 15px;
+    }
+
+    .slick-slide {
+      margin: 0 12.5px;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .slick-list {
+      margin: 0 -12.5px;
+    }
+  }
+
+  &__item {
+
+  }
+}
+
+@import "slideshow-responsive";

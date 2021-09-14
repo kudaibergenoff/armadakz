@@ -1,0 +1,1 @@
+$(document).ready(function(){{let a=$(".image-popup"),e=$(".overlay, .modal-image"),i=$(".modal-image__wrap"),n=$(".modal-image__close"),t=[e,n];$.each(a,function(){$(this).click(function(){e.fadeIn(200),i.html($(this).html()),i.fadeIn(200)})}),$.each(t,function(){$(this).on("click",function(){e.fadeOut(200),i.fadeOut(200)})})}});

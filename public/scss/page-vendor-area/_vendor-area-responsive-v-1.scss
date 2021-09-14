@@ -1,0 +1,241 @@
+@import "../vars";
+@import "../../libs/bootstrap/scss/mixins/breakpoints";
+
+/*==========  Desktop First  ==========*/
+
+// ≥1440px
+@include media-breakpoint-down(xl) {
+
+  .vendor {
+    &__nav {
+      font-size: 14px;
+    }
+    &__nav-item-icon {
+      width: 25px;
+    }
+    &__nav-items {
+
+    }
+    &__nav-item {
+      margin-right: 0;
+    }
+    &__nav-item-title {
+      padding: 9px 25px 9px 10px;
+    }
+    &__nav-item-arrow {
+      right: 15px;
+    }
+    &__nav-items {
+      & > .vendor__nav-item:first-child {
+        &:before {
+          right: 0;
+        }
+      }
+    }
+  }
+
+  .analytics {
+    &__tab-title {
+      font-size: 14px;
+    }
+
+    &__tab-value {
+      font-size: 26px;
+    }
+  }
+
+  .chart {
+    flex-direction: column;
+    &__graph {
+      border-radius: 7px 7px 0 0;
+      border-bottom: none;
+      border-right: 1px solid #DFE0EB;
+    }
+    &__statistics {
+      border-radius: 0 0 7px 7px;
+      flex-direction: row;
+    }
+    &__statistic {
+      min-width: auto;
+      &:not(:last-child) {
+        border-right: 1px solid #dfe0eb;
+        border-bottom: none;
+      }
+    }
+  }
+
+}
+
+// ≥1280px
+@include media-breakpoint-down(lg) {
+
+  .analytics {
+    &__tab-wrap {
+      padding: 10px 15px;
+    }
+  }
+
+  .chart {
+    &__statistics {
+
+    }
+    &__statistic {
+      padding: 15px;
+    }
+    &__statistic-value {
+      font-size: 16px;
+    }
+  }
+
+  .clients {
+    &__wrap {
+      margin-bottom: 20px;
+    }
+  }
+
+}
+
+// ≥1024px
+@include media-breakpoint-down(md) {
+
+  .vendor {
+    &__analytics {
+      padding-left: 15px;
+      padding-bottom: 35px;
+    }
+    &__nav-items {
+      margin-bottom: 0;
+      border: none !important;
+      & > .vendor__nav-item:first-child {
+        margin-bottom: 0;
+        &:before {
+          display: none;
+        }
+      }
+    }
+    &__nav-item-title {
+
+    }
+  }
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+  .analytics {
+    &__header {
+      flex-wrap: wrap;
+    }
+    &__date {
+      width: 100%;
+      margin-top: 20px;
+      input {
+        width: 100%;
+        min-width: auto;
+        padding: 10px 15px;
+        font-size: 14px;
+      }
+    }
+    &__tabs {
+      margin-top: 25px;
+    }
+    &__tab {
+      margin-bottom: 20px;
+    }
+    &__tab-title {
+      font-size: 13px;
+    }
+    &__tab-value {
+      font-size: 22px;
+    }
+    &__chart {
+      margin-top: 5px;
+    }
+    &__block-title {
+      font-size: 17px;
+    }
+  }
+
+  .assortment {
+    &__header {
+      padding: 25px 25px 0 25px;
+    }
+    &__details {
+      font-size: 12px;
+      padding-right: 25px;
+    }
+    &__seller {
+      margin-bottom: 0;
+      padding-left: 25px;
+      font-size: 10px;
+    }
+    &__stat {
+      padding: 13px 25px;
+      font-size: 12px;
+    }
+  }
+
+  .graph {
+    padding: 20px 15px;
+    &__title {
+      font-size: 12px;
+    }
+    &__settings {
+      font-size: 10px;
+    }
+    &__date {
+      display: none;
+    }
+  }
+
+  .chart {
+    &__graph {
+      border-radius: 7px;
+      border: 1px solid #DFE0EB;
+    }
+    &__statistics {
+      flex-wrap: wrap;
+      margin-top: 20px;
+      border-radius: 7px;
+    }
+    &__statistic {
+      flex-basis: 50%;
+      &:not(:last-child) {
+        border-right: none;
+      }
+    }
+    &__statistic-title {
+      font-size: 13px;
+    }
+  }
+
+  .clients {
+    &__wrap {
+      padding: 21px 20px;
+    }
+    &__title {
+      font-size: 17px;
+    }
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .client {
+    &__name {
+      font-size: 13px;
+    }
+    &__location {
+      font-size: 10px;
+    }
+  }
+
+}
+
+// ≥360px
+@include media-breakpoint-down(xs) {
+
+}

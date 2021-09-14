@@ -1,0 +1,98 @@
+@import "../vars";
+@import "../../libs/bootstrap/scss/mixins/breakpoints";
+
+/*==========  Desktop First  ==========*/
+
+// ≥1440px
+@include media-breakpoint-down(xl) {
+
+  .page-home {
+    &__popular-categories {
+      padding-top: 50px;
+      padding-bottom: 75px;
+    }
+  }
+
+
+
+}
+
+// ≥1280px
+@include media-breakpoint-down(lg) {
+
+
+
+}
+
+// ≥1024px
+@include media-breakpoint-down(md) {
+
+  .page-home {
+    &__advantages {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    &__about {
+      padding-bottom: 50px;
+      padding-top: 50px;
+    }
+    &__youtube {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  .stocks-item {
+    &__wrap {
+      padding: 35px 30px;
+      &--right {
+        float: left
+      }
+    }
+  }
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+  .page-home {
+    &__banner {
+      padding: 18px 15px 0 15px
+    }
+    &__popular-categories {
+      padding-bottom: 0;
+    }
+    &__viewed,
+    &__special,
+    &__recent {
+      position: relative;
+      padding-bottom: 25px;
+      &:before {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 15px;
+        right: 15px;
+        height: 4px;
+        background: #F0F0F0;
+      }
+    }
+    &__recommended {
+      padding-top: 40px;
+    }
+    &__youtube {
+      padding-top: 35px;
+    }
+  }
+
+  .video {
+    &__title {
+      font-size: 14px;
+    }
+  }
+
+}
+
+// ≥360px
+@include media-breakpoint-down(xs) {}

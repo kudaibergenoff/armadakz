@@ -1,0 +1,14 @@
+.seo-text {
+  &__content {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.85;
+    max-height: 250px;
+
+    p {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@import "seo-text-responsive";

@@ -1,0 +1,17 @@
+.breadcrumb {
+  background: none;
+  padding: 40px 0 20px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #949494
+}
+
+.breadcrumb-item.active {
+  color: #414141;
+}
+
+.breadcrumb-item + .breadcrumb-item:before {
+  color: #AFAFAF;
+}
+
+@import "breadcrumbs-responsive";

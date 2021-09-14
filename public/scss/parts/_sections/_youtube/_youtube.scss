@@ -1,0 +1,83 @@
+.youtube {
+  background: #F9F9F9;
+
+  &__content {
+    position: relative;
+    margin-top: 65px;
+  }
+
+  &__chanel-name {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #FFF;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1;
+    transform: translate(-35px, -70%);
+    opacity: .3;
+    text-shadow: 0 4px 4px rgba(255, 255, 255, 0.25), 5px 5px 25px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+  }
+
+  &__items {
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+
+  }
+}
+
+.video {
+  &__preview {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 165px;
+    cursor: pointer;
+
+    &:hover {
+      .video__button {
+        transform: translate(-50%, -50%) scale(1.15);
+        transform-origin: center;
+        transition: transform .2s;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    transition: transform .2s;
+  }
+
+  &__title {
+    display: block;
+    margin-top: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__date {
+    font-size: 13px;
+    color: #616161;
+  }
+}
+
+@import "youtube-responsive";

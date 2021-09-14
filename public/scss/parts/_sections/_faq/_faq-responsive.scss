@@ -1,0 +1,50 @@
+@import "../../../vars";
+@import "../../../../libs/bootstrap/scss/mixins/breakpoints";
+
+/*==========  Desktop First  ==========*/
+
+// ≥1440px
+@include media-breakpoint-down(xl) {
+
+}
+
+// ≥1280px
+@include media-breakpoint-down(lg) {
+
+}
+
+// ≥1024px
+@include media-breakpoint-down(md) {
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+  .faq {
+    &__item {
+      box-shadow: 10px 13px 20px rgba(0, 0, 0, 0.07);
+      padding: 0;
+      background: #F7F7F7;
+      border-radius: 5px;
+      border: none;
+    }
+    &__question {
+      padding: 10px 15px;
+      font-size: 15px;
+    }
+    &__response {
+      margin-top: 0;
+      padding: 20px 20px 25px 20px;
+      max-width: 100%;
+      background: #FFF;
+      font-size: 13px;
+    }
+  }
+
+}
+
+// ≥360px
+@include media-breakpoint-down(xs) {
+
+}

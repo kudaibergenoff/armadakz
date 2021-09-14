@@ -1,0 +1,58 @@
+.quantity {
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+  color: #414141;
+
+  &__title {
+    margin-right: 12px;
+  }
+
+  &__input-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 135px;
+    background: #F0F0F0;
+    border-radius: 30px;
+  }
+
+  &__input {
+    width: 100%;
+    max-width: calc(100% - 70px);
+    height: 38px;
+    border: none;
+    text-align: center;
+    appearance: none;
+    color: #414141;
+    background: none;
+    font-weight: 500;
+    font-family: $gotham-font;
+  }
+
+  &__operation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 33px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #FFF;
+    cursor: pointer;
+    user-select: none;
+
+    &--plus {
+      right: 3px;
+    }
+
+    &--minus {
+      left: 3px;
+    }
+  }
+}
+
+@import "quantity-responsive";

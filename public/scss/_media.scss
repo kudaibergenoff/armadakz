@@ -1,0 +1,118 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+// ≥1440px
+@include media-breakpoint-down(xl) {
+
+  .search {
+    input {
+      padding: 9px 40px 10px 15px;
+    }
+  }
+
+  .all-categories {
+    &__subcategories {
+      font-size: 13px;
+    }
+  }
+
+  .bars {
+    &__bar {
+      height: 3px;
+      margin-bottom: 5px;
+    }
+    &__title {
+      line-height: 1;
+    }
+  }
+
+  .button {
+    padding: 9px 24px 9px 24px;
+    &--border-bottom {
+      padding: 5px 0;
+    }
+  }
+
+  .page-title {
+    font-size: 26px;
+  }
+
+
+
+}
+
+// ≥1280px
+@include media-breakpoint-down(lg) {
+
+  .page-title {
+    font-size: 24px;
+  }
+
+  .social-login {
+    font-size: 13px;
+  }
+
+}
+
+// ≥1024px
+@include media-breakpoint-down(md) {
+
+  .modal-lg {
+    max-width: calc(100% - 40px);
+    margin: .5rem auto;
+  }
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+  .button {
+    padding: 6px 15px 6px 15px;
+  }
+
+  .modal-lg,
+  .modal-md {
+    max-width: calc(100% - 20px);
+  }
+
+  .modal {
+    font-size: 14px;
+    &__together {
+      padding: 20px 15px 60px 15px;
+    }
+    &__cart {
+      padding: 5px 20px;
+    }
+  }
+
+
+  .search {
+    input {
+      padding: 7px 40px 7px 15px;
+    }
+  }
+
+  .page-title {
+    font-size: 22px;
+  }
+
+}
+
+// ≥360px
+@include media-breakpoint-down(xs) {
+
+}
+
+// ≤ 1024px
+@include media-breakpoint-up(md) {
+
+  .modal-lg {
+    max-width: 992px;
+  }
+  .modal-md {
+    max-width: 650px;
+  }
+
+}

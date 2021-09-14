@@ -1,0 +1,85 @@
+@import "../vars";
+
+// Sections
+@import "../parts/_sections/_subscribe/subscribe";
+@import "../parts/_sections/_section/section";
+@import "../parts/_sections/_cart/cart";
+@import "../parts/_sections/_autoseatch/autosearch";
+@import "../parts/_sections/_together/together";
+@import "../parts/_sections/_youtube/youtube";
+@import "../parts/_sections/_pagination/pagination";
+@import "../parts/_sections/_reviews/reviews";
+
+// Sections
+@import "../parts/_blocks/_breadcrumbs/breadcrumbs";
+@import "../parts/_blocks/_news/news";
+@import "../parts/_blocks/_price/price";
+@import "../parts/_blocks/_quantity/quantity";
+
+.page-news {
+  &__subscribe {
+
+  }
+  &__news {
+    padding-bottom: 120px;
+  }
+  &__pagination {
+
+  }
+  &__article {
+    margin-bottom: 50px;
+  }
+  &__reviews {
+    margin-bottom: 100px;
+  }
+}
+
+.article {
+  &__left-side {
+
+  }
+  &__header {
+
+  }
+  &__title {
+
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #575757;
+    margin: 15px 0;
+    padding: 10px 0;
+  }
+  &__date {
+
+  }
+  &__comments {
+
+  }
+  &__time {
+
+  }
+  &__comment {
+
+  }
+  &__content {
+
+  }
+  &__footer {
+
+  }
+  &__share {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  }
+}
+
+@import "news-responsive.scss";

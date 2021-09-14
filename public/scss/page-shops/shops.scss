@@ -1,0 +1,153 @@
+@import "../vars";
+
+// Sections
+@import "../parts/_sections/_together/together";
+@import "../parts/_sections/_cart/cart";
+@import "../parts/_sections/_subscribe/subscribe";
+@import "../parts/_sections/_section/section";
+@import "../parts/_sections/_filters/filters";
+@import "../parts/_sections/_orders/orders";
+@import "../parts/_sections/_pagination/pagination";
+
+// Blocks
+@import "../parts/_blocks/_product-card/product-card";
+@import "../parts/_blocks/_shop-card/shop-card";
+@import "../parts/_blocks/_price/price";
+@import "../parts/_blocks/_breadcrumbs/breadcrumbs";
+@import "../parts/_blocks/_quantity/quantity";
+
+.page-shops {
+  &__subscribe {
+
+  }
+  &__catalog {
+    padding-bottom: 120px;
+  }
+}
+
+.catalog {
+  &__wrap {
+    margin-top: 60px;
+  }
+  &__sidebar {
+    padding-bottom: 80px;
+    padding-right: 50px;
+    font-size: 17px;
+  }
+  &__categories {
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #F0F0F0;;
+  }
+  &__categories-list {
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+    max-height: 415px;
+    font-size: 15px;
+  }
+  &__category {
+    margin-bottom: 10px;
+  }
+  &__abc {
+
+  }
+  &__shops {
+    margin: 0 -15px -60px -15px;
+    padding: 0;
+    list-style: none;
+  }
+  &__shop {
+    margin-bottom: 60px;
+  }
+  &__pagination {
+    margin-top: 60px;
+  }
+}
+
+.abc {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  margin-right: -16px;
+  margin-bottom: 30px;
+  a {
+    margin-right: 16px;
+  }
+}
+
+.shop {
+  position: relative;
+  height: 450px;
+  z-index: 1;
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.6);
+    z-index: 0;
+  }
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: flex-end;
+    color: #FFF;
+  }
+  &__title {
+    font-size: 38px;
+    font-weight: 700;
+  }
+  &__subtitle {
+
+  }
+  &__address {
+    margin: 20px 0;
+  }
+  &__links {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__link {
+    display: inline-flex;
+    margin-right: 15px;
+  }
+  &__left-side {
+
+  }
+  &__title {
+
+  }
+  &__right-side {
+    a {
+      &:hover {
+        path {
+          fill: $accent;
+        }
+      }
+    }
+  }
+  &__phone {
+    text-align: right;
+    font-size: 22px;
+    font-weight: 500;
+  }
+}
+
+@import "shops-responsive.scss";

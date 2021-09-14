@@ -1,0 +1,1 @@
+$(document).ready(function(){{let t=$(".catalog__categories-list, .custom-scrollbar");$.each(t,function(){"x"===$(this).attr("data-scrollbar-axis")?$(this).mCustomScrollbar({axis:"x"}):$(this).mCustomScrollbar()})}});

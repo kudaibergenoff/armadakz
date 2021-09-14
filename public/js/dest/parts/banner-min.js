@@ -1,0 +1,1 @@
+$(document).ready(function(){{let r=$(".banner__items"),e=$(".banner__arrow--next"),n=$(".banner__arrow--prev");r.slick({slidesToShow:1,slidesToScroll:1,dots:!0,arrows:!0,nextArrow:e,prevArrow:n,autoplaySpeed:5e3});let o=r.find(".slick-dots");o.wrap('<div class="banner__dots"></div>'),o=$(".banner__dots").appendTo(".banner__controls")}});

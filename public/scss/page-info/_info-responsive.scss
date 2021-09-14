@@ -1,0 +1,229 @@
+@import "../vars";
+@import "../../libs/bootstrap/scss/mixins/breakpoints";
+
+/*==========  Desktop First  ==========*/
+
+// ≥1440px
+@include media-breakpoint-down(xl) {
+
+  .rent-advantage {
+    &__name {
+      font-size: 18px;
+    }
+  }
+
+}
+
+// ≥1280px
+@include media-breakpoint-down(lg) {
+
+  .sitemap {
+    column-count: 3;
+    font-size: 14px;
+    &__main-category {
+      font-size: 15px;
+    }
+  }
+
+  .project {
+    &--rtl {
+      .project__content {
+        left: initial;
+        right: initial;
+      }
+    }
+
+    &__content-wrap {
+      padding: 0;
+    }
+
+    &__content {
+      left: initial;
+      right: initial;
+    }
+
+    &__image {
+      min-height: 50vh;
+    }
+  }
+
+  .rent-advantage {
+    &__name {
+      font-size: 15px;
+    }
+  }
+
+}
+
+// ≥1024px
+@include media-breakpoint-down(md) {
+
+  .page-info {
+    &__rent {
+      font-size: 14px;
+    }
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  .news {
+    &__content {
+      padding-bottom: 40px;
+    }
+  }
+
+  .delivery {
+    .advantages {
+      font-size: 14px;
+      &__item {
+        margin-bottom: 20px;
+      }
+    }
+    .advantage {
+      &__icon {
+        svg {
+          max-height: 50px;
+        }
+      }
+    }
+  }
+
+  .rent-advantage {
+    margin-bottom: 20px;
+  }
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+  .popup {
+    width: 200px;
+    font-size: 12px;
+    &__image {
+      height: 100px;
+    }
+  }
+
+  .site-ad {
+    font-size: 14px;
+    .nav-item {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .site-ad-item {
+    &__image {
+      padding-right: 0;
+    }
+  }
+
+  .sitemap {
+    column-count: 2;
+    font-size: 12px;
+    &__main-category {
+      font-size: 14px;
+    }
+  }
+
+  .page-info {
+    &__map {
+      margin-bottom: 30px;
+      #map {
+        height: 300px !important;
+      }
+    }
+    &__contacts {
+      font-size: 14px;
+    }
+    &__content {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      font-size: 14px;
+    }
+    &__payment {
+      font-size: 14px;
+    }
+    &__site-ad {
+      margin-bottom: 40px;
+    }
+    &__why-register {
+      padding-bottom: 30px;
+    }
+  }
+
+  .payments {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: -10px;
+    li {
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    img {
+      height: 40px;
+    }
+  }
+
+  .project {
+    &__image {
+      min-height: 30vh;
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__content {
+      padding: 20px 30px 40px 30px !important;
+    }
+  }
+
+  .service {
+    &__wrap {
+      flex-direction: column;
+    }
+    &__image {
+      width: 80px;
+      height: 80px;
+      min-width: 80px;
+      min-height: 80px;
+    }
+  }
+
+  #notfount {
+    padding-bottom: 60px;
+  }
+
+  .notfound .notfound-404 {
+    width: 110px;
+    height: 110px;
+  }
+  .notfound {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 110px;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+
+  .sitemap {
+    column-count: 1;
+    padding-bottom: 40px;
+    font-size: 14px;
+    &__main-category {
+      font-size: 16px;
+    }
+  }
+
+}
+
+// ≥360px
+@include media-breakpoint-down(xs) {
+
+
+
+}

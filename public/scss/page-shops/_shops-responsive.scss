@@ -1,0 +1,82 @@
+@import "../vars";
+@import "../../libs/bootstrap/scss/mixins/breakpoints";
+
+/*==========  Desktop First  ==========*/
+
+// ≥1440px
+@include media-breakpoint-down(xl) {
+
+}
+
+// ≥1280px
+@include media-breakpoint-down(lg) {
+
+  .catalog {
+    &__sidebar {
+      padding-right: 15px;
+    }
+  }
+
+  .shop {
+    &__wrap {
+      padding: 25px 0;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    &__left-side {
+      text-align: center;
+      font-size: 14px;
+    }
+    &__title {
+      font-size: 32px;
+    }
+    &__right-side {
+      margin-top: 25px;
+    }
+  }
+
+}
+
+// ≥1024px
+@include media-breakpoint-down(md) {
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+  .page-shops {
+    &__catalog {
+      padding-bottom: 40px;
+    }
+  }
+
+  .shop {
+    &__links {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    &__link {
+      margin-bottom: 15px;
+      a {
+        font-size: 14px;
+      }
+    }
+    &__right-side {
+      margin-top: 15px;
+      svg {
+        max-width: 30px;
+      }
+    }
+    &__phone {
+      font-size: 18px;
+    }
+  }
+
+}
+
+// ≥360px
+@include media-breakpoint-down(xs) {
+
+}

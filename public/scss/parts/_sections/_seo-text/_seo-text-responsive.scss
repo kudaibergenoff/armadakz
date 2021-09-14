@@ -1,0 +1,38 @@
+@import "../../../vars";
+@import "../../../../libs/bootstrap/scss/mixins/breakpoints";
+
+/*==========  Desktop First  ==========*/
+
+// ≥1440px
+@include media-breakpoint-down(xl) {
+
+  .seo-text {
+    &__content {
+      font-size: 14px;
+      p {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+}
+
+// ≥1280px
+@include media-breakpoint-down(lg) {
+
+}
+
+// ≥1024px
+@include media-breakpoint-down(md) {
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+}
+
+// ≥360px
+@include media-breakpoint-down(xs) {
+
+}

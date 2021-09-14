@@ -1,0 +1,153 @@
+@import "../vars";
+
+// Sections
+@import "../parts/_sections/_together/together";
+@import "../parts/_sections/_cart/cart";
+@import "../parts/_sections/_subscribe/subscribe";
+
+// Blocks
+@import "../parts/_blocks/_product-card/product-card";
+@import "../parts/_blocks/_price/price";
+@import "../parts/_blocks/_quantity/quantity";
+
+.page-order {
+  &__order {
+    padding-bottom: 75px;
+  }
+  &__title {
+    padding-top: 20px;
+    padding-bottom: 55px;
+    font-weight: 700;
+  }
+}
+
+.order {
+  &__details {
+
+  }
+  &__order-total {
+    padding-left: 95px;
+  }
+  &__additional {
+    padding: 36px;
+  }
+}
+
+.details {
+  font-size: 15px;
+  .custom-control {
+    padding-left: 2.25rem;
+  }
+  .select-wrapper {
+    margin: 0 !important;
+    & > input.select-dropdown {
+      height: 56px !important;
+      padding: 15px 20px !important;
+      border-radius: 3px !important;
+      border: 1px solid #646464 !important;
+    }
+    span {
+      &.caret {
+        top: 50%;
+        transform: translateY(-50%);
+        right: 15px;
+      }
+    }
+  }
+  label {
+    cursor: pointer;
+  }
+  input,
+  textarea {
+    padding: 15px 20px;
+    border: 1px solid #646464;
+    font-size: 14px;
+    border-radius: 3px;
+    &::placeholder {
+      color: #ADADAD;
+    }
+  }
+}
+
+.order-total {
+  &__wrap {
+    padding: 36px;
+    margin-bottom: 70px;
+  }
+  &__title {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  &__items {
+    margin: 35px 0 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__item {
+    margin-bottom: 22px;
+    .product-card__wrap {
+      background: none;
+    }
+    .product-card__content {
+      background: none;
+    }
+    .product-card__link {
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    .product-card__image {
+      width: 135px;
+      min-height: 175px;
+      background: #FFF;
+      img {
+        width: 80%;
+      }
+    }
+    .product-card__stickers {
+      top: 0;
+      left: 10px;
+    }
+    .product-card__sticker {
+      height: 15px;
+      padding: 0 10px;
+      font-size: 8px;
+    }
+    .product-card__favorite {
+      top: 5px;
+      right: 10px;
+      svg {
+        width: 15px;
+      }
+    }
+  }
+  &__total {
+    font-size: 17px;
+    .price {
+      font-size: 24px;
+    }
+  }
+}
+
+.additional {
+  &__items {
+    margin: 0 0 -30px 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__item {
+    padding: 30px 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid #D2D2D2;
+    }
+  }
+}
+
+.additional-item {
+  &__description {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+}
+
+@import "order-responsive";

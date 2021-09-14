@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<products>
+  <product>
+    <id>17747</id>
+    <Title>Тестовый товар №2</Title>
+    <IsActive>0</IsActive>
+    <productstatus>1</productstatus>
+    <userId>183</userId>
+    <itemId>100</itemId>
+    <sku>article-2</sku>
+    <storeId>471</storeId>
+     <image>images/Dec2020/uB48Aq96bt.jpeg</image>
+	<price>555555</price>
+    <price2>0</price2>
+    <stock>0</stock>
+    <createdAt>2020-12-24 18:14:19</createdAt>
+    <updateddAt>2020-12-29 02:46:59</updateddAt>
+    <description>&lt;p&gt;&lt;span style="color: #242e35; font-family: 'Gotham Pro', sans-serif; font-size: 16px; background-color: #ffffff;"&gt;Описание товара&lt;/span&gt;&lt;/p&gt;</description>
+    <countryId>5</countryId>
+    <manufacturer>Материал изготовления</manufacturer>
+    <width>100</width>
+    <height>200</height>
+    <depth>300</depth>
+    <isDelivery>0</isDelivery>
+    <seoTitle>Заголовок</seoTitle>
+    <metaDescription>Описание</metaDescription>
+    <metaTags>Ключевые слова</metaTags>
+  </product>
+  <product>
+    <id>17748</id>
+    <Title>Тестовый товар №1</Title>
+    <IsActive>1</IsActive>
+    <productstatus>1</productstatus>
+    <userId>183</userId>
+    <itemId>91</itemId>
+    <sku>article-1</sku>
+    <storeId>471</storeId>
+    <price>9999</price>
+    <price2>0</price2>
+    <stock>0</stock>
+    <createdAt>2020-12-24 18:15:54</createdAt>
+    <updateddAt>2020-12-29 02:46:59</updateddAt>
+    <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium deleniti dolore dolores et, minima. Debitis dolorem facere fugiat illo, molestias necessitatibus odit placeat, porro quasi quis, sint sit suscipit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium deleniti dolore dolores et, minima. Debitis dolorem facere fugiat illo, molestias necessitatibus odit placeat, porro quasi quis, sint sit suscipit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium deleniti dolore dolores et, minima. Debitis dolorem facere fugiat illo, molestias necessitatibus odit placeat, porro quasi quis, sint sit suscipit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium deleniti dolore dolores et, minima. Debitis dolorem facere fugiat illo, molestias necessitatibus odit placeat, porro quasi quis, sint sit suscipit?&lt;/p&gt;&#13;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium deleniti dolore dolores et, minima. Debitis dolorem facere fugiat illo, molestias necessitatibus odit placeat, porro quasi quis, sint sit suscipit?&lt;/p&gt;</description>
+    <countryId>15</countryId>
+    <manufacturer>Материал изготовления</manufacturer>
+    <width>23123</width>
+    <height>31231</height>
+    <depth>12312</depth>
+    <color>beige</color>
+    <color>silver</color>
+    <color>steel</color>
+    <isDelivery>1</isDelivery>
+    <seoTitle>Заголовок</seoTitle>
+    <metaDescription>Описание</metaDescription>
+    <metaTags>Ключевые слова</metaTags>
+  </product>
+</products>

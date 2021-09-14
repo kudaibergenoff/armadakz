@@ -1,0 +1,64 @@
+@import "../../../vars";
+@import "../../../../libs/bootstrap/scss/mixins/breakpoints";
+
+/*==========  Desktop First  ==========*/
+
+// ≥1440px
+@include media-breakpoint-down(xl) {
+
+}
+
+// ≥1280px
+@include media-breakpoint-down(lg) {
+
+}
+
+// ≥1024px
+@include media-breakpoint-down(md) {
+
+  .filters {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    bottom: 0;
+    //overflow: auto;
+    direction: rtl;
+    background: #FFF;
+    padding: 10px 0 10px 10px;
+    z-index: 16;
+    width: 100%;
+    max-width: 320px;
+    transition: transform .4s;
+    &.active {
+      transform: translateX(-100%);
+      transition: transform .4s;
+    }
+    &__header,
+    &__checkbox-group,
+    &__price,
+    &__search {
+      direction: ltr;
+    }
+    &__close {
+      cursor: pointer;
+    }
+    &__price {
+      padding: 15px 20px 40px 20px;
+    }
+    &__checkbox-group,
+    &__search {
+      padding: 15px 20px;
+    }
+  }
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+}
+
+// ≥360px
+@include media-breakpoint-down(xs) {
+
+}

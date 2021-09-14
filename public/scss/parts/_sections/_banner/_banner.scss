@@ -1,0 +1,149 @@
+@import "../../../vars";
+
+.banner {
+  position: relative;
+
+  &--category {
+    .banner__controls {
+      left: 75px;
+      right: 75px;
+    }
+
+    .banner-item__content {
+      padding: 0 60px;
+    }
+  }
+
+  &__items {
+    margin: 0 !important;
+    padding: 0;
+    list-style: none;
+    height: 555px;
+    overflow: hidden;
+
+    .slick-list,
+    .slick-track {
+      height: 100%;
+    }
+  }
+
+  &__item {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__controls {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__arrows {
+    display: flex;
+    align-items: center;
+  }
+
+  &__arrow {
+    cursor: pointer;
+
+    svg {
+      display: flex;
+    }
+
+    &--next {
+      transform: rotate(180deg);
+    }
+
+    &--prev {
+      margin-right: 35px;
+    }
+
+    &:hover {
+      path {
+        fill: $accent;
+      }
+    }
+  }
+
+  &__dots {
+    .slick-dots {
+      position: initial;
+      width: initial;
+
+      button {
+        opacity: 0;
+      }
+
+      .slick-active {
+        background: $accent;
+        border-color: $accent;
+      }
+
+      li {
+        width: 15px;
+        height: 15px;
+        min-width: 15px;
+        min-height: 15px;
+        border: 1px solid #FFF;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.banner-item {
+  &__wrap {
+    height: 100%;
+
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__title {
+    padding: 0 15px;
+    margin-top: -18px;
+    font-size: 42px;
+    font-weight: 900;
+    color: #FFF;
+    background: rgba(0, 0, 0, 0.6);
+    line-height: 1.4;
+  }
+
+  &__description {
+    max-width: 570px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 7px 15px;
+    color: #FFF;
+    background: rgba(0, 0, 0, 0.6);
+    line-height: 1.4;
+  }
+
+  &__button {
+    margin-top: 30px;
+    color: #FFF;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+@import "banner-responsive";

@@ -1,0 +1,41 @@
+@import "../../../vars";
+@import "../../../../libs/bootstrap/scss/mixins/breakpoints";
+
+/*==========  Desktop First  ==========*/
+
+// ≥1440px
+@include media-breakpoint-down(xl) {
+
+}
+
+// ≥1280px
+@include media-breakpoint-down(lg) {
+
+}
+
+// ≥1024px
+@include media-breakpoint-down(md) {
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+  .category-card {
+    &__image {
+      height: 155px;
+      img {
+        height: 80%;
+      }
+    }
+    &__title {
+      font-size: 14px;
+    }
+  }
+
+}
+
+// ≥360px
+@include media-breakpoint-down(xs) {
+
+}

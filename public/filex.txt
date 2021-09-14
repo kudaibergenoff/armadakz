@@ -1,0 +1,1 @@
+557176821100.00UAH100.00UAHPayment1234567QWE2020-11-27 12:26:0746.119.193.14UAКиевКиевЦентральная Украина50.45000130.5233335555554444MasterCard12/22CloudPaymentsRUВведите данные картыA1B2C31CompletedTest{"myProp":"myProp value"}0.00SAP

@@ -1,0 +1,47 @@
+@import "../vars";
+@import "../../libs/bootstrap/scss/mixins/breakpoints";
+
+/*==========  Desktop First  ==========*/
+
+// ≥1440px
+@include media-breakpoint-down(xl) {
+
+}
+
+// ≥1280px
+@include media-breakpoint-down(lg) {
+
+}
+
+// ≥1024px
+@include media-breakpoint-down(md) {
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+  .page-login {
+    &__bg {
+      padding: 0 15px;
+    }
+  }
+
+  .login {
+    font-size: 13px;
+    margin: 40px 0;
+    padding: 40px 30px;
+    &__title {
+      font-size: 22px;
+    }
+    button[type="submit"] {
+      height: 40px;
+    }
+  }
+
+}
+
+// ≥360px
+@include media-breakpoint-down(xs) {
+
+}

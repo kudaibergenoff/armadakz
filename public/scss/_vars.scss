@@ -1,0 +1,16 @@
+$gotham-font: "Gotham Pro", sans-serif;
+$gilroy-font: "Gilroy", sans-serif;
+$accent: #E0001A;
+$secondary: #169BD5;
+$green: #11B603;
+$orange: #FFA900;
+$text: #242E35;
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, xsm: 360, sm: 576px, md: 768px, lg: 1024px, xl: 1280px, xxl: 1440px);
+$container-max-widths: (xsm: 334, sm: 540px, md: 720px, lg: 960px, xl: 1170px, xxl: 1310px);
+$breadcrumb-divider: quote("▪");
+
+$gutter: $grid-gutter-width;

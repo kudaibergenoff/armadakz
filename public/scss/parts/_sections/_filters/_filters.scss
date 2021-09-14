@@ -1,0 +1,183 @@
+.shop-card {
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #F8F8F8;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  &__image {
+    position: relative;
+    height: 245px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    &:before {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 40px;
+      background: linear-gradient(358.31deg, #F8F8F8 21.13%, rgba(248, 248, 248, 0) 98.73%);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 0 25px 25px 25px;
+    font-size: 15px;
+  }
+
+  &__title {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__categories {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      position: relative;
+
+      &:not(:last-child) {
+        &:after {
+          content: ', ';
+        }
+      }
+    }
+  }
+
+  &__address {
+
+  }
+
+  &__phones {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+
+    svg {
+      margin-right: 15px;
+    }
+  }
+
+  &__footer {
+    &--row {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+
+      .shop-card__link {
+        margin: 0 10px 0 0;
+      }
+
+      .shop-card__map {
+        margin: 0 !important;
+      }
+    }
+  }
+
+  &__map {
+    display: flex;
+    align-items: center;
+    color: $secondary;
+    font-size: 13px;
+    font-weight: 500;
+
+    svg {
+      display: inline;
+      margin-left: 10px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 7px 32px 7px 32px;
+    margin-right: 18px;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+}
+
+.filters {
+  &--hidden {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    bottom: 0;
+    //overflow: auto;
+    direction: rtl;
+    background: #FFF;
+    padding: 10px 0 10px 10px;
+    z-index: 16;
+    width: 100%;
+    max-width: 320px;
+    transition: transform .4s;
+    &.active {
+      transform: translateX(-100%);
+      transition: transform .4s;
+    }
+    .filters__header,
+    .filters__checkbox-group,
+    .filters__price,
+    .filters__search {
+      direction: ltr;
+    }
+    .filters__close {
+      cursor: pointer;
+    }
+    .filters__price {
+      padding: 15px 20px 40px 20px;
+    }
+    .filters__checkbox-group,
+    .filters__search {
+      padding: 15px 20px;
+    }
+  }
+  &__price {
+    padding: 20px 0 35px 0;
+    border-bottom: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+  }
+
+  &__checkbox-group {
+    font-size: 17px;
+  }
+
+  .custom-checkbox {
+    margin-left: 3px;
+  }
+
+  &__search {
+    padding-bottom: 35px;
+  }
+
+  .custom-control-label {
+    margin-top: 1px;
+    margin-left: 5px;
+  }
+}
+
+@import "filters-responsive";

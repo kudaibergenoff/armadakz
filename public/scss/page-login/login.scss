@@ -1,0 +1,143 @@
+@import "../vars";
+
+// Sections
+@import "../parts/_sections/_subscribe/subscribe";
+@import "../parts/_sections/_cart/cart";
+@import "../parts/_sections/_autoseatch/autosearch";
+@import "../parts/_sections/_together/together";
+
+// Blocks
+@import "../parts/_blocks/_product-card/product-card";
+@import "../parts/_blocks/_price/price";
+@import "../parts/_blocks/_quantity/quantity";
+
+.page-login {
+  &__bg {
+    overflow: hidden;
+    &--seller {
+      background-position: center !important;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+    }
+  }
+  &__login {
+
+  }
+}
+
+.page-vendor-register {
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  &__login {
+    box-shadow: 0 2px 15px rgba(0,0,0,.10);
+  }
+}
+
+.login {
+  position: relative;
+  max-width: 460px;
+  margin: 60px auto;
+  padding: 40px 55px;
+  background-color: #FFF;
+  border-radius: 5px;
+  font-size: 15px;
+  box-shadow: 3px 7px 15px rgba(0,0,0,.15);
+  &__in {
+    display: flex;
+  }
+  &__remind {
+    display: none;
+  }
+  &__remind-button {
+
+  }
+  &--register {
+    max-width: 580px;
+    .input-prefix {
+      top: 1.15rem;
+      transform: none;
+    }
+  }
+  &__title {
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #4A4A4A;
+  }
+  &__as-seller {
+    font-size: 16px;
+    &:hover {
+      span {
+        color: $accent;
+      }
+      path {
+        fill: $accent;
+      }
+    }
+  }
+  button[type="submit"] {
+    height: 50px;
+  }
+  .custom-control-label::before {
+    top: .15rem;
+  }
+
+  .custom-control-label::after {
+    top: .30rem;
+  }
+
+  label {
+    margin-bottom: 0;
+  }
+
+  input {
+    min-height: 56px;
+  }
+  .md-form.md-outline label {
+    top: 5px;
+  }
+  &__alert-wrap {
+    display: flex;
+    padding: 10px 15px;
+    background: $accent;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  &__alert {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: none;
+    width: 90%;
+    transform: translate(-50%,-50%);
+    &.active {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.md-form.md-outline>input[type]:-webkit-autofill:not(.browser-default):not([type=search])+label.active {
+  transform: translateY(-15px) scale(.8);
+}
+
+.md-form.md-outline label.active {
+  transform: translateY(-17px) scale(.8)
+}
+
+.white-space-nowrap {
+  white-space: nowrap;
+}
+
+.login-type {
+  a {
+    color: $accent;
+    font-size: 14px;
+  }
+}
+
+@import "login-responsive";

@@ -1,0 +1,51 @@
+@import "../../../vars";
+@import "../../../../libs/bootstrap/scss/mixins/breakpoints";
+
+/*==========  Desktop First  ==========*/
+
+// ≥1440px
+@include media-breakpoint-down(xl) {
+
+}
+
+// ≥1280px
+@include media-breakpoint-down(lg) {
+
+}
+
+// ≥1024px
+@include media-breakpoint-down(md) {
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+  .pagination {
+    &__more {
+      padding: 7px 15px;
+      font-size: 14px;
+    }
+    &__item {
+      font-size: 14px;
+      min-width: 30px;
+      height: 30px;
+    }
+    &__arrow {
+      width: 30px;
+      height: 30px;
+      &--prev {
+        margin-right: 15px;
+      }
+      &--next {
+        margin-left: 15px;
+      }
+    }
+  }
+
+}
+
+// ≥360px
+@include media-breakpoint-down(xs) {
+
+}

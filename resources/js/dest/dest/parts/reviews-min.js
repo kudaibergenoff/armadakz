@@ -1,0 +1,1 @@
+$(document).ready(function(){{let e=$(".reviews__add-button"),d=$(".reviews__add");e.on("click",function(){d.slideToggle(200)})}});

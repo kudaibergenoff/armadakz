@@ -1,0 +1,95 @@
+@import "../../../vars";
+@import "../../../../libs/bootstrap/scss/mixins/breakpoints";
+
+/*==========  Desktop First  ==========*/
+
+// ≥1440px
+@include media-breakpoint-down(xl) {
+
+  .banner {
+    &__items {
+      height: 450px;
+    }
+  }
+
+  .banner-item {
+    &__title {
+      font-size: 32px;
+    }
+  }
+
+}
+
+// ≥1280px
+@include media-breakpoint-down(lg) {
+
+}
+
+// ≥1024px
+@include media-breakpoint-down(md) {
+
+  .banner {
+    &--category {
+      .banner__controls {
+        left: 25px;
+        right: 25px;
+      }
+      .banner-item__content {
+        padding: 65px 15px 0 15px;
+      }
+    }
+  }
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+  .banner {
+    &__controls {
+      justify-content: center;
+    }
+    &__arrows {
+      display: none;
+    }
+    &__items {
+      height: 495px;
+    }
+  }
+
+  .banner-item {
+    text-align: center;
+    &__content {
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 65px;
+    }
+    &__title {
+      font-size: 27px;
+    }
+    &__description {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    &__button {
+      font-size: 12px;
+    }
+  }
+
+}
+
+// ≥768px
+@include media-breakpoint-down(xsm) {
+
+  .banner {
+    &__items {
+      height: 350px;
+    }
+  }
+
+}
+
+// ≥360px
+@include media-breakpoint-down(xs) {
+
+}

@@ -1,0 +1,66 @@
+@import "../../../vars";
+@import "../../../../libs/bootstrap/scss/mixins/breakpoints";
+
+/*==========  Desktop First  ==========*/
+
+// ≥1440px
+@include media-breakpoint-down(xl) {
+
+  .section {
+    &__background {
+      &--pr {
+        right: 0;
+      }
+    }
+    &__title {
+      font-size: 28px;
+    }
+  }
+
+}
+
+// ≥1280px
+@include media-breakpoint-down(lg) {
+
+}
+
+// ≥1024px
+@include media-breakpoint-down(md) {
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+  .section {
+    &__title {
+      width: 100%;
+      text-align: center;
+      font-size: 24px;
+    }
+    &__header-text {
+      display: none;
+    }
+    &__content {
+      margin-top: 25px;
+    }
+    &__title {
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      color: $text !important;
+    }
+    &__arrows {
+      display: none;
+    }
+    &__background {
+      display: none;
+    }
+  }
+
+}
+
+// ≥360px
+@include media-breakpoint-down(xs) {
+
+}

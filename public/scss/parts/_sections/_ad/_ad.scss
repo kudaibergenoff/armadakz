@@ -1,0 +1,23 @@
+.ad {
+  position: relative;
+  display: none;
+
+  &__close {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: flex-end;
+
+    &:hover {
+      path {
+        fill: $accent;
+      }
+    }
+  }
+}
+
+@import "ad-responsive";

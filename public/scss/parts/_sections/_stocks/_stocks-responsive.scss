@@ -1,0 +1,72 @@
+@import "../../../vars";
+@import "../../../../libs/bootstrap/scss/mixins/breakpoints";
+
+/*==========  Desktop First  ==========*/
+
+// ≥1440px
+@include media-breakpoint-down(xl) {
+
+  .stocks {
+    &__item {
+      min-height: 350px;
+    }
+  }
+
+  .stocks-item {
+    &__wrap {
+      &--right {
+        padding-right: 45px;
+      }
+    }
+  }
+
+}
+
+// ≥1280px
+@include media-breakpoint-down(lg) {
+
+}
+
+// ≥1024px
+@include media-breakpoint-down(md) {
+
+  .stocks {
+    &__item {
+      min-height: 300px;
+      margin-bottom: 25px;
+    }
+  }
+
+  .stocks-item {
+    &__wrap {
+      padding: 30px 20px;
+    }
+  }
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+  .stocks {
+    &__item {
+      min-height: 210px;
+    }
+  }
+
+  .stocks-item {
+    &__title {
+      font-size: 15px;
+    }
+    &__terms,
+    &__button {
+      font-size: 9px;
+    }
+  }
+
+}
+
+// ≥360px
+@include media-breakpoint-down(xs) {
+
+}

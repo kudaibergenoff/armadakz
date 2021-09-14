@@ -1,0 +1,12 @@
+GET /pay-ok?TransactionId=557006054&Amount=100.00&Currency=UAH&PaymentAmount=100.00&PaymentCurrency=UAH&OperationType=Payment&InvoiceId=1234567&AccountId=&SubscriptionId=&Name=QWER&Email=&DateTime=2020-11-27+09:14:31&IpAddress=46.119.193.14&IpCountry=UA&IpCity=%D0%9A%D0%B8%D0%B5%D0%B2&IpRegion=%D0%9A%D0%B8%D0%B5%D0%B2&IpDistrict=%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0&IpLatitude=50.450001&IpLongitude=30.523333&CardFirstSix=555555&CardLastFour=4444&CardType=MasterCard&CardExpDate=12%2f21&Issuer=CloudPayments&IssuerBankCountry=RU&Description=%D0%92%D0%B2%D0%B5%D0%B4%D0%B8%D1%82%D0%B5+%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5+%D0%BA%D0%B0%D1%80%D1%82%D1%8B&AuthCode=A1B2C3&TestMode=1&Status=Completed&GatewayName=Test&Data=%7B%22myProp%22:%22myProp+value%22%7D&TotalFee=0.00&CardProduct=SAP&PaymentMethod= HTTP/1.1
+Accept:            */*
+Connection:        close
+Content-Hmac:      XMI6tqwuk44I/e3RK12Zg5eFkUDivEp1kPJZL1tmkeg=
+Content-Length:    0
+Content-Type:      application/x-www-form-urlencoded
+Host:              wp10.webpr.biz.ua
+User-Agent:        CloudPayments/Webhooks Service 1.0
+X-Content-Hmac:    An/LzwxfTVMn9wodjamkN+fV7eFfc8zB+YQbnFaMWE0=
+X-Forwarded-For:   87.251.91.164
+X-Forwarded-Proto: http
+

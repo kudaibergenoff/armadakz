@@ -1,0 +1,153 @@
+@import "../vars";
+@import "../../libs/bootstrap/scss/mixins/breakpoints";
+
+/*==========  Desktop First  ==========*/
+
+// ≥1440px
+@include media-breakpoint-down(xl) {
+
+}
+
+// ≥1280px
+@include media-breakpoint-down(lg) {
+
+  .page-order {
+    &__title {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+
+  .order {
+    &__order-total {
+      padding-left: 15px;
+    }
+    &__additional {
+      font-size: 14px;
+      padding: 20px 25px;
+    }
+  }
+
+  .order-total {
+    &__wrap {
+      margin-bottom: 30px;
+      padding: 20px 25px;
+    }
+    &__items {
+      margin-top: 15px;
+    }
+  }
+
+  .details {
+    .select-wrapper {
+      & > input.select-dropdown {
+        height: 43px !important;
+        padding: 10px 15px !important;
+      }
+    }
+    input,
+    textarea {
+      padding: 10px 15px;
+    }
+  }
+
+  .details {
+    font-size: 14px;
+    .h4 {
+      font-size: 1.2rem;
+    }
+  }
+
+  .additional-item {
+    &__description {
+      font-size: 14px;
+    }
+  }
+
+}
+
+// ≥1024px
+@include media-breakpoint-down(md) {
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+  .page-order {
+    background: #F7F8FC;
+  }
+
+  .order {
+    &__order-total {
+      margin-top: 40px;
+      background: #FFF;
+    }
+    &__additional {
+      padding: 20px 17px 40px 17px;
+    }
+  }
+
+  .order-total {
+    &__wrap {
+      padding: 20px 0;
+      background: none !important;
+    }
+    &__total-price {
+      font-size: 20px;
+    }
+    &__title {
+      font-size: 18px;
+    }
+  }
+
+  .additional {
+    border-radius: 4px;
+    background: rgba(248, 248, 251, 0.8);
+    &__item {
+      padding: 15px 0;
+    }
+  }
+
+  .details {
+    .select-wrapper {
+      & > input.select-dropdown {
+        background: #FFF !important;
+        border-color: #EAEAEA !important;
+        font-size: 14px;
+        color: #ADADAD;
+      }
+      span.caret {
+        z-index: 3;
+      }
+    }
+    &__block {
+      padding: 25px 15px 10px 15px;
+      background: #FFFFFF;
+      border: 1px solid #EAEAEA;
+      box-sizing: border-box;
+      border-radius: 3px;
+      input,
+      textarea {
+        background: #F8F8F8;
+        border-color: #F8F8F8;
+      }
+    }
+    input,
+    textarea {
+      border-color: #EAEAEA;
+    }
+  }
+
+  .seller {
+    &__order-detail-title {
+      font-size: 14px;
+    }
+  }
+
+}
+
+// ≥360px
+@include media-breakpoint-down(xs) {
+
+}

@@ -1,0 +1,84 @@
+@import "../../../vars";
+@import "../../../../libs/bootstrap/scss/mixins/breakpoints";
+
+/*==========  Desktop First  ==========*/
+
+// ≥1440px
+@include media-breakpoint-down(xl) {
+
+}
+
+// ≥1280px
+@include media-breakpoint-down(lg) {
+
+}
+
+// ≥1024px
+@include media-breakpoint-down(md) {
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+  .cart {
+    &__continue {
+      margin-top: 10px;
+    }
+    &__total {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+    &__total-wrap {
+      justify-content: center;
+      flex-wrap: wrap;
+      font-size: 14px;
+      .price {
+        margin-right: 0;
+        margin-bottom: 10px;
+        &__current,
+        &__special {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .cart-product {
+    padding: 20px 0;
+    &__wrap {
+      flex-wrap: wrap;
+    }
+    &__image {
+      width: 70%;
+      height: 85px;
+      min-height: auto;
+      margin: 0 auto 15px auto;
+      img {
+        object-position: center;
+      }
+    }
+    &__delete {
+      margin-left: 10px;
+    }
+    &__details {
+      max-width: 100%;
+    }
+    &__name {
+      font-size: 13px;
+    }
+    &__footer {
+      //margin-left: -120px;
+    }
+    .quantity__title {
+      display: none;
+    }
+  }
+
+}
+
+// ≥360px
+@include media-breakpoint-down(xs) {
+
+}

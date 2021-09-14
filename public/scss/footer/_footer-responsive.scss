@@ -1,0 +1,118 @@
+@import "../vars";
+
+/*==========  Desktop First  ==========*/
+
+// ≥1440px
+@include media-breakpoint-down(xl) {
+
+}
+
+// ≥1280px
+@include media-breakpoint-down(lg) {
+
+  .footer {
+    &__bottom-wrap {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    &__payments {
+      margin-bottom: 20px;
+    }
+  }
+
+}
+
+// ≥1024px
+@include media-breakpoint-down(md) {
+
+  .footer {
+    &__description,
+    &__social {
+      font-size: 14px;
+    }
+    &__logo {
+      img {
+        max-width: 150px;
+      }
+    }
+    &__column-title {
+      font-size: 14px;
+    }
+    &__nav {
+      font-size: 14px;
+    }
+    &__contacts-items {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__contacts-item {
+      justify-content: space-between;
+      max-width: 250px;
+      margin-right: 20px;
+    }
+  }
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+  .footer {
+    &__description {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 250px;
+    }
+    &__top {
+      padding-bottom: 0;
+      text-align: center;
+    }
+    &__social {
+      display: none;
+    }
+    &__contacts-items {
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__contacts-item {
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: initial;
+      margin-right: 0;
+      margin-bottom: 20px;
+      & > span:first-child {
+        display: block;
+        margin-left: -13px;
+      }
+    }
+    &__payments {
+      margin-bottom: 0;
+      margin-top: 15px;
+      img {
+        max-height: 22px;
+      }
+    }
+    &__bottom-wrap {
+      padding: 40px 0;
+    }
+    &__vendor {
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column-reverse;
+      font-size: 14px;
+      span {
+        margin-right: 0;
+        margin-top: 15px;
+      }
+    }
+  }
+
+}
+
+// ≥360px
+@include media-breakpoint-down(xs) {
+
+}

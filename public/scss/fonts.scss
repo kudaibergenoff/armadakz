@@ -1,0 +1,16 @@
+@import "_mixins/font-face";
+
+// Gilroy
+@include font-face('Gilroy', '../fonts/Gilroy/Gilroy-Regular', 400, normal);
+
+// Gotham Pro
+@include font-face('Gotham Pro', '../fonts/GothamPro/GothamPro-Light', 300, normal);
+//@include font-face('Gotham Pro', '../fonts/GothamPro/GothamPro-LightItalic', 300, italic);
+@include font-face('Gotham Pro', '../fonts/GothamPro/GothamPro', 400, normal);
+//@include font-face('Gotham Pro', '../fonts/GothamPro/GothamPro-Italic', 400, italic);
+@include font-face('Gotham Pro', '../fonts/GothamPro/GothamPro-Medium', 500, normal);
+//@include font-face('Gotham Pro', '../fonts/GothamPro/GothamPro-MediumItalic', 500, italic);
+@include font-face('Gotham Pro', '../fonts/GothamPro/GothamPro-Bold', 700, normal);
+//@include font-face('Gotham Pro', '../fonts/GothamPro/GothamPro-BoldItalic', 700, italic);
+@include font-face('Gotham Pro', '../fonts/GothamPro/GothamPro-Black', 900, normal);
+//@include font-face('Gotham Pro', '../fonts/GothamPro/GothamPro-BlackItalic', 900, italic);

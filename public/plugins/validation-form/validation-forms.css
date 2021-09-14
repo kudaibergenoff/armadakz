@@ -1,0 +1,23 @@
+/* Validation forms */
+
+input:hover::placeholder {
+    color: transparent;
+}
+
+.md-form input:not(.browser-default):invalid:not([readonly])
+{
+    border-bottom: 1px solid red;
+    box-shadow: 0 1px 0 0 red;
+}
+.md-form input:not(.browser-default):focus:not([readonly]):invalid
+{
+    border-bottom: 1px solid red;
+    box-shadow: 0 1px 0 0 red;
+    color: red;
+}
+
+.select-wrapper input.select-dropdown.not-filled {
+    border-bottom: 1px solid red;
+    box-shadow: 0 1px 0 0 red;
+    color: red;
+}

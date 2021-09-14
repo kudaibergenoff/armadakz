@@ -1,0 +1,75 @@
+@import "../vars";
+
+// Sections
+@import "../parts/_sections/_banner/banner";
+@import "../parts/_sections/_section/section";
+@import "../parts/_sections/_viewed/viewed";
+@import "../parts/_sections/_slideshow/slideshow";
+@import "../parts/_sections/_stocks/stocks";
+@import "../parts/_sections/_advantages/advantages";
+@import "../parts/_sections/_youtube/youtube";
+@import "../parts/_sections/_seo-text/seo-text";
+@import "../parts/_sections/_subscribe/subscribe";
+@import "../parts/_sections/_together/together";
+@import "../parts/_sections/_cart/cart";
+
+// Blocks
+@import "../parts/_blocks/_category-card/category-card";
+@import "../parts/_blocks/_product-card/product-card";
+@import "../parts/_blocks/_quantity/quantity";
+@import "../parts/_blocks/_price/price";
+
+.page-home {
+  &__banner {
+
+  }
+  &__popular-categories {
+    padding-top: 65px;
+    padding-bottom: 115px;
+  }
+  &__viewed {
+
+  }
+  &__recommended {
+    padding-top: 65px;
+    padding-bottom: 25px;
+  }
+  &__stocks {
+
+  }
+  &__special {
+    padding-top: 73px;
+  }
+  &__recent {
+    padding-top: 35px;
+    padding-bottom: 55px;
+  }
+  &__advantages {
+    padding-top: 60px;
+    padding-bottom: 90px;
+  }
+  &__youtube {
+    padding-top: 55px;
+    padding-bottom: 80px;
+  }
+  &__about {
+    padding-top: 70px;
+    padding-bottom: 130px;
+  }
+  &__subscribe {
+
+  }
+}
+
+.popular-categories {
+  &__items {
+    margin: -15px -12.5px;
+    padding: 0;
+    list-style: none;
+  }
+  &__item {
+    padding: 17px 12.5px;
+  }
+}
+
+@import "home-responsive";

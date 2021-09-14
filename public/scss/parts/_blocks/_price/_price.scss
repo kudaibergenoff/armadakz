@@ -1,0 +1,36 @@
+.price {
+  &__previous {
+    font-size: 15px;
+    color: #616161;
+    line-height: 1;
+  }
+
+  &__special,
+  &__current {
+    line-height: 1;
+    position: relative;
+    font-weight: 700;
+    font-size: 17px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      bottom: -3px;
+      left: -2px;
+      right: -2px;
+      top: 55%;
+      background: rgba(224, 0, 26, 0.07);
+    }
+  }
+
+  &__special {
+    margin-left: 10px;
+    color: $accent;
+  }
+
+  &__current {
+    color: #272727;
+  }
+}
+
+@import "price-responsive";
