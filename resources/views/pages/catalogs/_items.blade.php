@@ -17,15 +17,15 @@
                     </a>
                 </li>
             @empty
-                @foreach($products as $product)
+                {{-- @foreach($products as $product)
                     @include('pages.home.__card',['item'=>$product,'col'=>true])
-                @endforeach
+                @endforeach --}}
             @endforelse
         </ul>
 
-        @empty(!$products)
+        {{-- @empty(!$products)
             @include('layouts._paginate',['pagination'=>$products])
-        @endempty
+        @endempty --}}
         
     </div>
 </section>
