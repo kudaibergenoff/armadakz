@@ -323,7 +323,7 @@ class ProductService
     public function getForCredit_items()
     {
         $items = Item::select('id','title','subcatalog_id')
-            ->orderBy('title')
+            ->orderBy('title')->where('isActive', 1)
             ->get();
         return $items;
     }
@@ -334,6 +334,7 @@ class ProductService
             ->orderBy('title')
             ->select('id','catalog_id','title')
             ->with('catalog:title')
+            ->where('isActive', 1)
             ->get();
         return $subcatalogs;
     }
