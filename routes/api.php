@@ -21,4 +21,8 @@ Route::post('/pay/result', function(Request $request) {
     file_put_contents('file.txt', json_encode($request->all()));
 });
 
+Route::get('test', function() {
+    return "Test";
+});
+
 
