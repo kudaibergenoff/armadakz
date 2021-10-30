@@ -41,6 +41,10 @@ Route::group(['prefix' => App\Http\Middleware\Locale::getLocale()],// макси
 //        Route::post('/payment',[NewsCommentController::class,'store'])
 //            ->name('newsComments.store'); // ?????
 
+        Route::get('test', function () {
+            return 'Test';
+        });
+
         Route::view('/clear','clear');
         Route::get('/pay',[IndexController::class,'pay'])
             ->name('pay');
