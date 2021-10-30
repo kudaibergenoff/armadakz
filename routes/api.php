@@ -12,7 +12,7 @@ Route::post('/pay/result', function(Request $request) {
 });
 
 Route::get('test', function() {
-    return "Test1";
+    return response()->json('Test 1');
 });
 
 
