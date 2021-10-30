@@ -106,12 +106,12 @@
 {{--                                    <input type="text" name="slug" class="form-control" placeholder="Ссылка">--}}
 {{--                                </div>--}}
                             </div>
-                            <div class="col-12 col-lg-6 mb-3">
+                            <div class="col-12 col-lg-12 mb-3">
                                 @include('layouts.forms.textarea',['name'=>'html','class'=>'tinyMCE','cols'=>30,'rows'=>11,'label'=>'HTML','placeholder'=>'HTML'])
 {{--                                <label>HTML</label>--}}
 {{--                                <textarea name="html" id="" cols="30" rows="11" class="tinyMCE"></textarea>--}}
                             </div>
-                            <div class="col-12 col-lg-6 mb-3">
+                            <div class="col-12 col-lg-12 mb-3">
                                 @include('layouts.forms.textarea',['name'=>'comment','rows'=>12,'label'=>'Комментарий','placeholder'=>'Комментарий'])
 {{--                                <div class="form-group">--}}
 {{--                                    <label>Комментарий</label>--}}
@@ -120,35 +120,35 @@
                             </div>
                         </div>
 
-{{--                        <div class="row">--}}
-{{--                            <div class="col-12 col-lg-4" mb-3>--}}
-{{--                                <label class="mdb-main-label">Категория</label>--}}
-{{--                                <select class="form-control" name="category" searchable="Поиск">--}}
-{{--                                    <option value="" disabled selected>Выберите</option>--}}
-{{--                                    <option value="1">Вариант 1</option>--}}
-{{--                                    <option value="2">Вариант 2</option>--}}
-{{--                                    <option value="3">Вариант 3</option>--}}
-{{--                                </select>--}}
-{{--                            </div>--}}
-{{--                            <div class="col-12 col-lg-4 mb-3">--}}
-{{--                                <label class="mdb-main-label">Раздел</label>--}}
-{{--                                <select class="form-control" name="section" searchable="Поиск">--}}
-{{--                                    <option value="" disabled selected>Выберите</option>--}}
-{{--                                    <option value="1">Вариант 1</option>--}}
-{{--                                    <option value="2">Вариант 2</option>--}}
-{{--                                    <option value="3">Вариант 3</option>--}}
-{{--                                </select>--}}
-{{--                            </div>--}}
-{{--                            <div class="col-12 col-lg-4 mb-3">--}}
-{{--                                <label class="mdb-main-label">Подраздел</label>--}}
-{{--                                <select class="form-control" name="subsection" searchable="Поиск">--}}
-{{--                                    <option value="" disabled selected>Выберите</option>--}}
-{{--                                    <option value="1">Вариант 1</option>--}}
-{{--                                    <option value="2">Вариант 2</option>--}}
-{{--                                    <option value="3">Вариант 3</option>--}}
-{{--                                </select>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
+                       <div class="row">
+                           <div class="col-12 col-lg-4" mb-3>
+                               <label class="mdb-main-label">Категория</label>
+                               <select class="form-control" name="category" searchable="Поиск">
+                                   <option value="" disabled selected>Выберите</option>
+                                   <option value="1">Вариант 1</option>
+                                   <option value="2">Вариант 2</option>
+                                   <option value="3">Вариант 3</option>
+                               </select>
+                           </div>
+                           <div class="col-12 col-lg-4 mb-3">
+                               <label class="mdb-main-label">Раздел</label>
+                               <select class="form-control" name="section" searchable="Поиск">
+                                   <option value="" disabled selected>Выберите</option>
+                                   <option value="1">Вариант 1</option>
+                                   <option value="2">Вариант 2</option>
+                                   <option value="3">Вариант 3</option>
+                               </select>
+                           </div>
+                           <div class="col-12 col-lg-4 mb-3">
+                               <label class="mdb-main-label">Подраздел</label>
+                               <select class="form-control" name="subsection" searchable="Поиск">
+                                   <option value="" disabled selected>Выберите</option>
+                                   <option value="1">Вариант 1</option>
+                                   <option value="2">Вариант 2</option>
+                                   <option value="3">Вариант 3</option>
+                               </select>
+                           </div>
+                       </div>
 
                         <button type="submit" class="mt-5 button btn-primary">Сохранить</button>
                     </form>
