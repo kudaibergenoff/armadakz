@@ -18,6 +18,8 @@ class BannerType extends Model
     const HOME_TOP = 2; // главная страница центр-верх
     const HOME_BOTTOM = 3; // главная страница центр-низ
     const CATEGORY = 4; // страница категорий
+    const SUBCATALOG = 5; // страница раздела
+    const ITEM = 6; // страница подкатегорий
     const WIDE_TOP = 7; // Верхний широкий баннер
 
     protected $table = 'banner_types';
