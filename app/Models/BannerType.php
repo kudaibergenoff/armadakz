@@ -21,6 +21,7 @@ class BannerType extends Model
     const SUBCATEGORY = 5; // страница раздела
     const ITEM = 6; // страница подраздела
     const WIDE_TOP = 7; // Верхний широкий баннер
+    const POPUP = 8; // попап баннер
 
     protected $table = 'banner_types';
 
