@@ -38,10 +38,12 @@
 
 @push('scripts')
     <script type="text/javascript" src="{{ asset('js/dest/page-home/home-min.js') }}"></script>
+    @isset($popupBanner)
     <script>
         setTimeout(function() {
             $('#myModal').modal('show');
         }, 5000);
     </script>
+    @endisset
 @endpush
 
