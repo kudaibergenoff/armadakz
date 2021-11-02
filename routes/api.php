@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\Catalog\CatalogController;
 
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
@@ -11,8 +12,6 @@ Route::post('/pay/result', function(Request $request) {
     file_put_contents('file.txt', json_encode($request->all()));
 });
 
-Route::get('test1', function() {
-    return response()->json('Test 1');
-});
+Route::get('catalogs/{id}', [CatalogController::class, 'get']);
 
 

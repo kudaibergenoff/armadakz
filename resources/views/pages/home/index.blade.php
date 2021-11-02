@@ -29,6 +29,7 @@
     @include('pages.home._advantages')  <!-- Наши преимущества -->
     @include('pages.home._youtube')     <!-- Новые видео на нашем канале -->
     @include('pages.home._about')       <!-- О торговом комплексе -->
+    @include('banners.popup_banner')    <!-- Попап баннер -->
 @endsection
 
 @push('styles')
@@ -37,6 +38,10 @@
 
 @push('scripts')
     <script type="text/javascript" src="{{ asset('js/dest/page-home/home-min.js') }}"></script>
+    <script>
+        setTimeout(function() {
+            $('#myModal').modal('show');
+        }, 5000);
+    </script>
 @endpush
-
 

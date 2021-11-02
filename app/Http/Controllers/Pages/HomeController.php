@@ -38,6 +38,7 @@ class HomeController extends Controller
         $banners = $this->bannerService->views(BannerType::HOME_SLIDER);
         $bannerTops = $this->bannerService->views(BannerType::HOME_TOP,2);
         $bannerBottom = $this->bannerService->views(BannerType::HOME_BOTTOM);
+        $popupBanner = $this->bannerService->views(BannerType::POPUP);
 
         $recommends = $this->productService->recommends();
         $specials = $this->productService->specials();
@@ -51,6 +52,6 @@ class HomeController extends Controller
         $views = $this->productService->views();
         $likeIds = $this->service->likeIds();
 
-        return view('pages.home.index',compact('banners','bannerTops','bannerBottom','views','recommends','specials','recents','videos','populars','likeIds'));
+        return view('pages.home.index',compact('banners','bannerTops','bannerBottom', 'popupBanner', 'views','recommends','specials','recents','videos','populars','likeIds'));
     }
 }

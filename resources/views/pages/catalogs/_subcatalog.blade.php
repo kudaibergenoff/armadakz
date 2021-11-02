@@ -28,7 +28,7 @@
                     </li>
                 @endif
             @empty
-                
+
             @endforelse
         </ul>
     </div>

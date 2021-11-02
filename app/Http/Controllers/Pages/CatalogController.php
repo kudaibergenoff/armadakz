@@ -81,7 +81,9 @@ class CatalogController extends Controller
         $productsQuery = Product::active()
             ->select('id','is_hot','title','slug','is_discount','discount','store_id','price','price_2','images', 'colors')
             ->where('subcatalog_id', $subcatalog->id);
-        
+
+        $banners = $this->bannerService->views(BannerType::SUBCATEGORY);
+
         $products = $productsQuery->paginate(16);
 
         //return now()->format('Y-m-d');
@@ -89,7 +91,7 @@ class CatalogController extends Controller
         $views = $this->productService->views();
         $likeIds = $this->service->likeIds();
 
-        return view('pages.catalogs.show', compact( 'subcatalog','items', 'views', 'products','likeIds'));
+        return view('pages.catalogs.show', compact( 'subcatalog','items', 'views', 'products','likeIds', 'banners'));
     }
 
     public function subcatalogShow($slug)
@@ -136,7 +138,9 @@ class CatalogController extends Controller
         $views = $this->productService->views();
         $likeIds = $this->service->likeIds();
 
-        return view('pages.catalogs.subcatalog_show', compact( 'subcatalog','items','products','stores','countries','maxPrice','minPrice','views','likeIds'));
+        $banners = $this->bannerService->views(BannerType::SUBCATEGORY);
+
+        return view('pages.catalogs.subcatalog_show', compact( 'subcatalog','items','products','stores','countries','maxPrice','minPrice','views','likeIds', 'banners'));
     }
 
     public function itemShow($slug)
