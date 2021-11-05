@@ -192,13 +192,17 @@
                         <div class="d-flex align-content-center flex-wrap">
                             <h2 class="page-title orders__title mr-4 mb-2">Все баннеры</h2>
                             <div>
+                                @isCan('add_banners')
                                 <button class="button btn-sm btn-success products__add mr-2 mb-2">
                                     <a href="{{ route('admin.banners.create') }}">Добавить</a>
                                 </button>
+                                @endisCan
+                                @isCan('delete_banners')
                                 <button class="button btn-sm btn-primary products__remove mr-2 mb-2" disabled data-toggle="modal" data-target="#confirm-delete-modal">
                                     <span>Удалить выделенное</span>
                                     <input type="hidden" name="muliple-delete-action" value="{{ route('admin.banners.destroy','plug') }}">
                                 </button>
+                                @endisCan
 {{--                                <button class="button btn-sm btn-light products__filter mr-2 mb-2">Фильтр</button>--}}
                             </div>
                         </div>

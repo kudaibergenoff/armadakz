@@ -13,13 +13,17 @@
                         <div class="d-flex align-content-center flex-wrap">
                             <h2 class="page-title orders__title mr-4 mb-2">Все разрешения</h2>
                             <div>
+                                @isCan('add_permissions')
                                 <button class="button btn-sm btn-success products__add mr-2 mb-2">
                                     <a href="{{ route('admin.permissions.create') }}">Добавить</a>
                                 </button>
+                                @endisCan
+                                @isCan('delete_permissions')
                                 <button class="button btn-sm btn-primary products__remove mr-2 mb-2" disabled data-toggle="modal" data-target="#confirm-delete-modal">
                                     <span>Удалить выделенное</span>
                                     <input type="hidden" name="muliple-delete-action" value="{{ route('admin.permissions.destroy','plug') }}">
                                 </button>
+                                @endisCan
                             </div>
                         </div>
                         <span class="orders__count">Найдено <b>{{ $permissions->count() }}</b></span>

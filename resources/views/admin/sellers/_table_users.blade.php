@@ -41,6 +41,7 @@
         <span>{{ $user->last_login_date }}</span>
     </td>
     <td class="text-center">
+        @isCan('edit_sellers')
         <a href="{{ route('admin.sellers.edit',$user->id) }}" class="products-table__edit">
             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="30" height="30" rx="3" fill="#169BD5"/>
@@ -48,6 +49,7 @@
                 <path d="M23.9161 6.71167C23.4604 6.25592 22.8424 5.99994 22.1979 6.00001C21.5531 5.99815 20.9344 6.25458 20.48 6.71208L12.1204 15.0709C12.0511 15.1408 11.9988 15.2257 11.9675 15.319L10.6982 19.1269C10.5875 19.4594 10.7672 19.8188 11.0998 19.9295C11.1643 19.951 11.2319 19.962 11.2999 19.9621C11.368 19.962 11.4357 19.951 11.5004 19.9297L15.3082 18.6604C15.4018 18.6292 15.4867 18.5766 15.5564 18.5069L23.9159 10.1474C24.8647 9.19871 24.8648 7.66047 23.9161 6.71167ZM23.0185 9.25062L14.7682 17.501L12.3032 18.3241L13.1238 15.8623L21.3773 7.61198C21.831 7.15913 22.566 7.15988 23.0189 7.61362C23.2352 7.83038 23.3571 8.12381 23.358 8.43004C23.3588 8.7379 23.2365 9.0333 23.0185 9.25062Z" fill="white"/>
             </svg>
         </a>
+        @endisCan
 {{--        <button class="products-table__delete" data-toggle="modal" data-target="#confirm-delete-modal" data-item-id="{{ $user->id }}">--}}
 {{--            <input type="hidden" name="delete-action" value="{{ route('admin.sellers.destroy',['id'=>$user->id]) }}">--}}
 {{--            <input type="hidden" name="delete-product-name" value="{{ $user->title }}">--}}
