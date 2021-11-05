@@ -50,13 +50,17 @@
                         <div class="d-flex align-content-center flex-wrap">
                             <h2 class="page-title orders__title mr-4 mb-2">Товары</h2>
                             <div>
+                                @isCan('add_products')
                                 <button class="button btn-sm btn-success products__add mr-2 mb-2">
                                     <a href="{{ route('admin.products.create') }}">Добавить</a>
                                 </button>
+                                @endisCan
+                                @isCan('delete_products')
                                 <button class="button btn-sm btn-primary products__remove mr-2 mb-2" disabled data-toggle="modal" data-target="#confirm-delete-modal">
                                     <span>Удалить выделенное</span>
                                     <input type="hidden" name="muliple-delete-action" value="{{ route('admin.products.destroy','plug') }}">
                                 </button>
+                                @endisCan
 {{--                                <button class="button btn-sm btn-light products__filter mr-2 mb-2">Фильтр</button>--}}
                                 @if(isset($_GET) and count($_GET) > 0)
                                     <a href="{{ route('admin.products.index') }}" class="text-primary">

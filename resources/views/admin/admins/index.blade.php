@@ -30,11 +30,13 @@
                         <div class="d-flex align-content-center flex-wrap">
                             <h2 class="page-title orders__title mr-4 mb-2">Администраторы</h2>
                             <div>
+                                @isCan('add_admins')
                                 <button class="button btn-sm btn-success products__add mr-2 mb-2">
                                     <a href="{{ route('admin.users.index') }}">
                                         Назначить нового
                                     </a>
                                 </button>
+                                @endisCan
                                 {{-- @success('add_admins')
                                 <h1>True</h1>
                                 @endsuccess
@@ -46,7 +48,7 @@
                                         echo 'False';
                                     }
                                 @endphp  --}}
-                                
+
                                {{-- <button class="button btn-sm btn-primary products__remove mr-2 mb-2" disabled data-toggle="modal" data-target="#confirm-delete-modal">
                                    <span>Удалить выделенное</span>
                                    <input type="hidden" name="muliple-delete-action" value="{{ route('admin.admins.destroy',['admin'=>'plug']) }}">

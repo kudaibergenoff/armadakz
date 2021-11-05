@@ -13,13 +13,17 @@
                         <div class="d-flex align-content-center flex-wrap">
                             <h2 class="page-title orders__title mr-4 mb-2">Все роли</h2>
                             <div>
+                                @isCan('add_roles')
                                 <button class="button btn-sm btn-success products__add mr-2 mb-2">
                                     <a href="{{ route('admin.roles.create') }}">Добавить</a>
                                 </button>
+                                @endisCan
+                                @isCan('delete_roles')
                                 <button class="button btn-sm btn-primary products__remove mr-2 mb-2" disabled data-toggle="modal" data-target="#confirm-delete-modal">
                                     <span>Удалить выделенное</span>
                                     <input type="hidden" name="muliple-delete-action" value="{{ route('admin.roles.destroy','plug') }}">
                                 </button>
+                                @endisCan
                             </div>
                         </div>
                         <span class="orders__count">Найдено <b>{{ $roles->count() }}</b></span>
